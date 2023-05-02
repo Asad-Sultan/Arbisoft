@@ -1,0 +1,111 @@
+/******************************/
+/* Color Variables */
+/******************************/
+
+:root {
+  --main_blue: #0a76db;
+  --darker_blue: #0d3f8a;
+  --dark_blue: #223554;
+}
+
+/******************************/
+/* Global Reset */
+/******************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/******************************/
+/* HTML & Body Styles */
+/******************************/
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #ffffff;
+  min-width: 375px;
+}
+
+/******************************/
+/* Website Container */
+/******************************/
+
+.container {
+  max-width: 1200px;
+  padding: 0 32px;
+}
+
+/******************************/
+/* Header & Navigation */
+/******************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.logo {
+  height: 32px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-link,
+.nav-cta {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  transition-duration: 200ms;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: var(--dark_blue);
+}
+
+.nav-link:hover {
+  color: var(--main_blue);
+}
+
+.nav-link ion-icon {
+  color: var(--main_blue);
+  font-size: 20px;
+  transition: inherit;
+}
+
+.nav-link:hover ion-icon {
+  transform: rotate(-180deg);
+}
+
+.nav-cta {
+  background-color: var(--main_blue);
+  color: #eeeeee;
+  padding: 8px 24px;
+  border-radius: 100px;
+  transition-duration: 400ms;
+}
+
+.nav-cta:hover {
+  background-color: var(--darker_blue);
+}
