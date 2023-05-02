@@ -1,6 +1,6 @@
 .swiper {
   width: 100vw;
-  height: 75vh;
+  height: calc(100vh - 60px);
 }
 
 .swiper-slide {
