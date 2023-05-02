@@ -1,0 +1,1 @@
+pagination and button classes can be overridden with important https://www.w3schools.com/css/css_important.asp

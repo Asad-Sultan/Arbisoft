@@ -169,40 +169,56 @@
 
     <div class="swiper swiper-main" id="swiper-main">
       <div class="swiper-wrapper">
-        <div class="swiper-slide hero-slide1"><img src="img/hero-slider/1.jpeg" /></div>
-        <div class="swiper-slide hero-slide2"><img src="img/hero-slider/2.jpeg" /></div>
-        <div class="swiper-slide hero-slide3"><img src="img/hero-slider/3.jpeg" /></div>
+        <div class="swiper-slide slide-main hero-slide1"><img src="img/hero-slider/1.jpeg" /></div>
+        <div class="swiper-slide slide-main hero-slide2"><img src="img/hero-slider/2.jpeg" /></div>
+        <div class="swiper-slide slide-main hero-slide3"><img src="img/hero-slider/3.jpeg" /></div>
       </div>
-      <div class="swiper-button-next" id="swiper-main-next"></div>
-      <div class="swiper-button-prev" id="swiper-main-prev"></div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next swiper-btn-main" id="swiper-main-next"></div>
+      <div class="swiper-button-prev swiper-btn-main" id="swiper-main-prev"></div>
+      <div class="swiper-pagination pagination-main"></div>
+    </div>
+
+    <div class="journey-block-container">
+      <div class="journey-block" id="ppl-count"></div>
+      <div class="journey-block" id="office"></div>
+      <div class="journey-block" id="projects"></div>
+      <div class="journey-block" id="rating"></div>
+    </div>
+
+    <div class="swiper swiper-relations">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-relation">Slide 1</div>
+        <div class="swiper-slide slide-relation">Slide 2</div>
+        <div class="swiper-slide slide-relation">Slide 3</div>
+        <div class="swiper-slide slide-relation">Slide 4</div>
+        <div class="swiper-slide slide-relation">Slide 5</div>
+        <div class="swiper-slide slide-relation">Slide 6</div>
+        <div class="swiper-slide slide-relation">Slide 7</div>
+        <div class="swiper-slide slide-relation">Slide 8</div>
+        <div class="swiper-slide slide-relation">Slide 9</div>
+        <div class="swiper-slide slide-relation">Slide 10</div>
+        <div class="swiper-slide slide-relation">Slide 11</div>
+      </div>
+      <div class="swiper-button-next swiper-btn-relation" id="swiper-main-next"></div>
+      <div class="swiper-button-prev swiper-btn-relation" id="swiper-main-prev"></div>
+    </div>
+
+    <span id="relation-message"></span>
+
+    <div class="swiper swiper-client">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-client">Slide 1</div>
+        <div class="swiper-slide slide-client">Slide 2</div>
+        <div class="swiper-slide slide-client">Slide 3</div>
+        <div class="swiper-slide slide-client">Slide 4</div>
+        <div class="swiper-slide slide-client">Slide 5</div>
+      </div>
+      <div class="swiper-button-next swiper-btn-client" id="swiper-main-next"></div>
+      <div class="swiper-button-prev swiper-btn-client" id="swiper-main-prev"></div>
+      <div class="swiper-pagination pagination-client"></div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <script>
-      var swiperMain = new Swiper(".swiper-main", {
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        effect: "fade",
-        fadeEffect: {
-          crossFade: true,
-        },
-        loop: true,
-        loop: "true",
-      });
-      document.getElementById("swiper-top").addEventListener("click", function () {
-        swiper.slideNext();
-      });
-      // document.addEventListener("click", function(){
-      //   swiper.slideNext();
-      // });
-    </script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>
