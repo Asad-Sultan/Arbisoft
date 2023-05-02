@@ -123,12 +123,13 @@
         },
         pagination: {
           el: ".swiper-pagination",
+          clickable: true,
         },
         effect: "fade",
         fadeEffect: {
           crossFade: true,
         },
-        loop: 'true',
+        loop: true,
       });
       document.getElementById("swiper-top").addEventListener("click", function(){
         swiper.slideNext();
