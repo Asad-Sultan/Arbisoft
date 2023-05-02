@@ -7,14 +7,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <link rel="stylesheet" href="css/style.css" />
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
 
     <style>
       .swiper {
@@ -50,55 +50,144 @@
       <nav>
         <ul class="nav-list">
           <li>
-            <a class="nav-link" href="https://arbisoft.com/about">Why Arbisoft</a>
+            <div class="nav-link">
+              <a class="nav-link" href="https://arbisoft.com/about">Why Arbisoft</a>
+            </div>
           </li>
+
           <li>
-            <a class="nav-link" href="https://arbisoft.com/services">
-              What we do
+            <div class="nav-link">
+              <a href="https://arbisoft.com/services">What we do</a>
               <ion-icon name="chevron-down-outline"></ion-icon>
-            </a>
+            </div>
+
+            <div class="dropdown-menu dropdown-services">
+              <div class="overview">
+                <a href="https://arbisoft.com/services">Overview</a>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+              <div class="dropdown-links">
+                <a class="dropdown-link" href="#">Data and Artificial Intelligence</a>
+                <a class="dropdown-link" href="#">Enterprise Software Development</a>
+                <a class="dropdown-link" href="#">Web App Development</a>
+                <a class="dropdown-link" href="#">Mobile App Development</a>
+                <a class="dropdown-link" href="#">Education Technology</a>
+                <a class="dropdown-link" href="#">QA and Software Testing</a>
+                <a class="dropdown-link" href="#">UX, Product, and Design</a>
+                <a class="dropdown-link" href="#">Web Scraping</a>
+                <a class="dropdown-link" href="#">Cyber Security</a>
+                <a class="dropdown-link" href="#">DevOps Solutions</a>
+              </div>
+            </div>
           </li>
+
           <li>
-            <a class="nav-link" href="https://arbisoft.com/work">
-              Who we work with
+            <div class="nav-link">
+              <a href="https://arbisoft.com/work">Who we work with</a>
               <ion-icon name="chevron-down-outline"></ion-icon>
-            </a>
+            </div>
+
+            <div class="dropdown-menu dropdown-work">
+              <div class="overview">
+                <a href="https://arbisoft.com/work">Overview</a>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+
+              <div class="dropdown-links">
+                <a class="dropdown-link" href="#">Technology</a>
+                <a class="dropdown-link" href="#">Education</a>
+                <a class="dropdown-link" href="#">Travel</a>
+                <a class="dropdown-link" href="#">Healthcare</a>
+                <a class="dropdown-link" href="#">Finance</a>
+                <a class="dropdown-link" href="#">E-commerce</a>
+              </div>
+            </div>
           </li>
+
           <li>
-            <a class="nav-link" href="https://arbisoft.com/products">
-              Our products
+            <div class="nav-link">
+              <a href="https://arbisoft.com/products">Our products</a>
               <ion-icon name="chevron-down-outline"></ion-icon>
-            </a>
+            </div>
+
+            <div class="dropdown-menu dropdown-products">
+              <div class="overview">
+                <a href="https://arbisoft.com/products">Overview</a>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+
+              <div class="dropdown-links">
+                <a class="dropdown-link" href="#">Edly</a>
+                <a class="dropdown-link" href="#">Moonbeam</a>
+                <a class="dropdown-link" href="#">Hirestream</a>
+                <a class="dropdown-link" href="#">Workstream</a>
+                <a class="dropdown-link" href="#">itmX</a>
+                <a class="dropdown-link" href="#">Nurture</a>
+                <a class="dropdown-link" href="#">Fatafat</a>
+                <a class="dropdown-link" href="#">Schoolgram</a>
+                <a class="dropdown-link" href="#">Listentool</a>
+                <a class="dropdown-link" href="#">Xiangqi</a>
+                <a class="dropdown-link" href="#">Sentimeter</a>
+                <a class="dropdown-link" href="#">Juniper</a>
+              </div>
+            </div>
           </li>
+
           <li>
-            <a class="nav-link" href="https://arbisoft.com/case-studies">Our work</a>
+            <div class="nav-link">
+              <a href="https://arbisoft.com/case-studies">Our work</a>
+            </div>
           </li>
+
           <li>
-            <a class="nav-link" href="https://arbisoft.com/inside-arbisoft">
-              Inside Arbisoft
+            <div class="nav-link">
+              <a href="https://arbisoft.com/inside-arbisoft">Inside Arbisoft</a>
               <ion-icon name="chevron-down-outline"></ion-icon>
-            </a>
+            </div>
+
+            <div class="dropdown-menu dropdown-inside-arbisoft">
+              <div class="overview">
+                <a href="https://arbisoft.com/inside-arbisoft">Overview</a>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+
+              <div class="dropdown-links">
+                <a class="dropdown-link" href="#">Life at Arbisoft</a>
+                <a class="dropdown-link" href="#">Arbisoft Engineering</a>
+              </div>
+            </div>
           </li>
+
           <li>
-            <a class="nav-link" href="https://arbisoft.com/careers">
-              Careers
+            <div class="nav-link">
+              <a href="https://arbisoft.com/careers">Careers</a>
               <ion-icon name="chevron-down-outline"></ion-icon>
-            </a>
+            </div>
+
+            <div class="dropdown-menu dropdown-careers">
+              <div class="overview">
+                <a href="https://arbisoft.com/careers">Overview</a>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
+
+              <div class="dropdown-links">
+                <a class="dropdown-link" href="#">Fresh Grad</a>
+                <a class="dropdown-link" href="#">Open Positions</a>
+              </div>
+            </div>
           </li>
+
           <li>
-            <a class="nav-cta" href="https://arbisoft.com/contact"> Contact us </a>
+            <div class="nav-cta">
+              <a href="https://arbisoft.com/contact">Contact us</a>
+            </div>
           </li>
         </ul>
       </nav>
     </header>
 
-    <div class="dropdown-menus">
-      <div class="dropdown-menu dropdown-services"></div>
-      <div class="dropdown-menu dropdown-work"></div>
-      <div class="dropdown-menu dropdown-products"></div>
-      <div class="dropdown-menu dropdown-inside-arbisoft"></div>
-      <div class="dropdown-menu dropdown-careers"></div>
-    </div>
+    <!-- Empty div to compensate for missing height of fixed header -->
+    <div class="header-height"></div>
 
     <div class="swiper swiper-main" id="swiper-main">
       <div class="swiper-wrapper">
@@ -130,8 +219,9 @@
           crossFade: true,
         },
         loop: true,
+        loop: "true",
       });
-      document.getElementById("swiper-top").addEventListener("click", function(){
+      document.getElementById("swiper-top").addEventListener("click", function () {
         swiper.slideNext();
       });
       // document.addEventListener("click", function(){

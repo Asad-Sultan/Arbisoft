@@ -25,6 +25,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Nunito", sans-serif;
   background-color: #ffffff;
@@ -37,8 +38,13 @@ body {
 
 .container {
   max-width: 1200px;
+  margin: 0 auto;
   padding: 0 32px;
 }
+
+/******************************/
+/* General Reusable Classes */
+/******************************/
 
 /******************************/
 /* Header & Navigation */
@@ -48,8 +54,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: 0 60px;
+  height: 60px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-height {
+  height: 60px;
 }
 
 .logo {
@@ -65,13 +80,7 @@ body {
   list-style: none;
 }
 
-.nav-link,
-.nav-cta {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-}
-
+/* For Links With Icons */
 .nav-link {
   display: flex;
   align-items: center;
@@ -79,12 +88,18 @@ body {
   transition-duration: 200ms;
 }
 
-.nav-link:link,
-.nav-link:visited {
+.nav-link a,
+.nav-cta a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav-link a {
   color: var(--dark_blue);
 }
 
-.nav-link:hover {
+.nav-link a:hover {
   color: var(--main_blue);
 }
 
@@ -98,7 +113,7 @@ body {
   transform: rotate(-180deg);
 }
 
-.nav-cta {
+.nav-cta a {
   background-color: var(--main_blue);
   color: #eeeeee;
   padding: 8px 24px;
@@ -106,6 +121,87 @@ body {
   transition-duration: 400ms;
 }
 
-.nav-cta:hover {
+.nav-cta a:hover {
   background-color: var(--darker_blue);
+}
+
+/* Dropdowns */
+
+.dropdown-menu {
+  background-color: #ffffff;
+  display: none;
+  padding: 36px 0;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 60px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-top: 1px var(--main_blue) solid;
+}
+
+.nav-list li:hover > .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.overview {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 36px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.overview ion-icon {
+  color: var(--main_blue);
+  transition-duration: 200ms;
+}
+
+.overview:hover ion-icon {
+  transform: translateX(3px);
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark_blue);
+  transition-duration: 200ms;
+}
+
+.dropdown-menu a:hover {
+  color: var(--main_blue);
+}
+
+.overview a {
+  font-size: 22px;
+}
+
+.dropdown-links {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+}
+
+.dropdown-services .dropdown-links {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.dropdown-work .dropdown-links {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.dropdown-products .dropdown-links {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.dropdown-inside-arbisoft .dropdown-links {
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.dropdown-careers .dropdown-links {
+  grid-template-rows: repeat(1, 1fr);
 }
