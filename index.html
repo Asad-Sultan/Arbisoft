@@ -92,6 +92,14 @@
       </nav>
     </header>
 
+    <div class="dropdown-menus">
+      <div class="dropdown-menu dropdown-services"></div>
+      <div class="dropdown-menu dropdown-work"></div>
+      <div class="dropdown-menu dropdown-products"></div>
+      <div class="dropdown-menu dropdown-inside-arbisoft"></div>
+      <div class="dropdown-menu dropdown-careers"></div>
+    </div>
+
     <div class="swiper swiper-main" id="swiper-top">
       <div class="swiper-wrapper">
         <div class="swiper-slide">Slide 1</div>
@@ -114,18 +122,17 @@
         pagination: {
           el: ".swiper-pagination",
         },
-        effect: 'fade',
+        effect: "fade",
         fadeEffect: {
-            crossFade: true
+          crossFade: true,
         },
       });
-      document.getElementById("swiper-top").addEventListener("click", function(){
+      document.getElementById("swiper-top").addEventListener("click", function () {
         swiper.slideNext();
       });
       // document.addEventListener("click", function(){
       //   swiper.slideNext();
       // });
     </script>
-
   </body>
 </html>
