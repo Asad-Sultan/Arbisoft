@@ -26,6 +26,17 @@ document.getElementById("service-btn").addEventListener("click", serviceBtn);
 document.getElementById("product-btn").addEventListener("click", productBtn);
 
 function industryBtn() {
+    if (grid1.classList[1] == "second") {
+        grid1.classList.remove("second");
+        grid1.classList.add("first");
+        grid2.classList.remove("second");
+        grid2.classList.add("first");
+        grid3.classList.remove("second");
+        grid3.classList.add("first");
+        grid4.classList.remove("second");
+        grid4.classList.add("first");
+    }
+    
     if (document.getElementById("img-1") != null) {
         document.getElementById("img-1").remove();
         document.getElementById("img-2").remove();
@@ -63,6 +74,17 @@ function industryBtn() {
 }
 
 function serviceBtn() {
+    if (grid1.classList[1] == "first") {
+        grid1.classList.remove("first");
+        grid1.classList.add("second");
+        grid2.classList.remove("first");
+        grid2.classList.add("second");
+        grid3.classList.remove("first");
+        grid3.classList.add("second");
+        grid4.classList.remove("first");
+        grid4.classList.add("second");
+    }
+
     if (document.getElementById("img-1") != null) {
         document.getElementById("img-1").remove();
         document.getElementById("img-2").remove();
@@ -109,6 +131,17 @@ function serviceBtn() {
 }
 
 function productBtn() {
+    if (grid1.classList[1] == "first") {
+        grid1.classList.remove("first");
+        grid1.classList.add("second");
+        grid2.classList.remove("first");
+        grid2.classList.add("second");
+        grid3.classList.remove("first");
+        grid3.classList.add("second");
+        grid4.classList.remove("first");
+        grid4.classList.add("second");
+    }
+
     if (document.getElementById("img-1") != null) {
         document.getElementById("img-1").remove();
         document.getElementById("img-2").remove();
