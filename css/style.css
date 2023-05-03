@@ -27,13 +27,13 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: #ffffff;
   min-width: 375px;
 }
 
 /******************************/
-/* Website Container */
+/* Website Containers */
 /******************************/
 
 .container {
@@ -172,7 +172,7 @@ body {
   visibility: hidden;
   opacity: 0;
   flex-direction: column;
-  padding: 36px 0;
+  padding: 20px 0;
   width: 100vw;
   position: fixed;
   left: 0;
@@ -191,9 +191,7 @@ body {
   display: flex;
   align-items: center;
   gap: 3px;
-  margin-bottom: 30px;
-  font-size: 22px;
-  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .overview ion-icon {
@@ -208,7 +206,7 @@ body {
 .dropdown-menu a {
   text-decoration: none;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--dark_blue);
   transition-duration: 200ms;
 }
@@ -219,6 +217,7 @@ body {
 
 .overview a {
   font-size: 22px;
+  font-weight: 600;
 }
 
 .dropdown-links {
@@ -226,6 +225,8 @@ body {
   grid-auto-flow: column;
   justify-items: center;
   row-gap: 20px;
+  border-top: 1px solid rgba(149, 157, 165, 0.5);
+  padding-top: 20px;
 }
 
 .dropdown-services .dropdown-links {
@@ -309,6 +310,7 @@ body {
 
 .hero-container-items h1 {
   font-size: 64px;
+  font-weight: 500;
   line-height: 1.15;
 }
 
@@ -320,4 +322,56 @@ body {
   margin-top: 12px;
   display: flex;
   gap: 24px;
+}
+
+/******************************/
+/* Achievements Section */
+/******************************/
+
+.section-achievements {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.achievements-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.achievements-heading h2 {
+  font-weight: 500;
+  font-size: 58px;
+  color: var(--dark_blue);
+}
+
+.achievements-heading h2 span {
+  color: var(--main_blue);
+}
+
+.achievements-divider {
+  background-color: rgba(136, 136, 136, 0.36);
+  width: 1px;
+}
+
+.achievements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--dark_blue);
+}
+
+.achievement .journey-block {
+  font-size: 40px;
+  margin-top: 16px;
+}
+
+.achievement p {
+  font-size: 18px;
 }
