@@ -34,29 +34,29 @@ var swiperClient = new Swiper(".swiper-client", {
 // relations with other companies one
 let messages = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"];
 
-document.getElementById("relation-message").innerHTML = messages[0];
+// document.getElementById("relation-message").innerHTML = messages[0];
 swiperRelation.on("activeIndexChange", () => {
   document.getElementById("relation-message").innerHTML = messages[swiperRelation.activeIndex];
 });
 
-function increasingNumberStart(id, endNumber, step, speed, before, after) {
+function increasingNumberStart(id, endNumber, step, speed, before, after, dec) {
   element = document.getElementById(id);
-  increasingNumberAnimate(0, step, endNumber, element, speed, before, after);
+  increasingNumberAnimate(0, step, endNumber, element, speed, before, after, dec);
 }
 
-function increasingNumberAnimate(i, step, endNumber, element, speed, before, after) {
+function increasingNumberAnimate(i, step, endNumber, element, speed, before, after, dec) {
   if (i <= endNumber) {
-    element.innerHTML = before + i.toFixed(1) + after;
+    element.innerHTML = before + i.toFixed(dec) + after;
     setTimeout(function () {
-      increasingNumberAnimate(i + step, step, endNumber, element, speed, before, after);
+      increasingNumberAnimate(i + step, step, endNumber, element, speed, before, after, dec);
     }, speed);
   }
 }
 
 // TODO Add "15 years" animation as well
 // BUG timing is off
-// BUG everything is in floating point
-increasingNumberStart("ppl-count", 450, 1, 2, "", "+");
-increasingNumberStart("office", 4, 1, 225, "", "");
-increasingNumberStart("projects", 550, 1, 1, "", "+");
-increasingNumberStart("rating", 4.9, 0.1, 10, "", "");
+increasingNumberStart("years", 15, 1, 32.666666666666664, "", " years", 0);
+increasingNumberStart("ppl-count", 450, 1, 1.0888888888888888, "", "+", 0);
+increasingNumberStart("office", 4, 1, 122.5, "", "", 0);
+increasingNumberStart("projects", 550, 1, 0.8909090909090909, "", "+", 0);
+increasingNumberStart("rating", 4.9, 0.1, 10, "", "", 1);
