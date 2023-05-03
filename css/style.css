@@ -46,6 +46,43 @@ body {
 /* General Reusable Classes */
 /******************************/
 
+/* Buttons */
+
+.btn {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 100px;
+  transition-duration: 200ms;
+}
+
+.btn--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 8px;
+}
+
+.btn--primary {
+  background-color: var(--main_blue);
+  color: #ffffff;
+}
+
+.btn--primary:hover {
+  background-color: var(--darker_blue);
+}
+
+.btn--secondary {
+  background-color: #ffffff;
+  color: var(--dark_blue);
+}
+
+.btn--secondary:hover {
+  background-color: var(--darker_blue);
+  color: #ffffff;
+}
+
 /******************************/
 /* Header & Navigation */
 /******************************/
@@ -140,8 +177,8 @@ body {
   position: fixed;
   left: 0;
   top: 60px;
+  border-top: 1px solid rgba(149, 157, 165, 0.5);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-top: 1px var(--main_blue) solid;
   transition-duration: 300ms;
 }
 
@@ -154,7 +191,7 @@ body {
   display: flex;
   align-items: center;
   gap: 3px;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
   font-size: 22px;
   font-weight: 700;
 }
@@ -200,23 +237,87 @@ body {
 .dropdown-work .dropdown-links {
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  width: 50%;
+  width: 30%;
 }
 
 .dropdown-products .dropdown-links {
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  width: 70%;
+  width: 50%;
 }
 
 .dropdown-inside-arbisoft .dropdown-links {
   grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  width: 50%;
+  width: 30%;
 }
 
 .dropdown-careers .dropdown-links {
   grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(2, 1fr);
-  width: 50%;
+  width: 30%;
+}
+
+/******************************/
+/* Hero Slider */
+/******************************/
+
+.swiper-main {
+  width: 100vw;
+  height: calc(100vh - 60px);
+}
+
+.swiper-btn-main {
+  color: #ffffff;
+}
+
+.slide-main {
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-main1 {
+  background-image: url("../img/hero-slider/1.jpeg");
+}
+
+.slide-main2 {
+  background-image: url("../img/hero-slider/2.jpeg");
+}
+
+.slide-main3 {
+  background-image: url("../img/hero-slider/3.jpeg");
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero-container-items {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-container-items h1,
+.hero-container-items p {
+  color: #ffffff;
+}
+
+.hero-container-items h1 {
+  font-size: 64px;
+  line-height: 1.15;
+}
+
+.hero-container-items p {
+  font-size: 24px;
+}
+
+.hero-btns {
+  margin-top: 12px;
+  display: flex;
+  gap: 24px;
 }
