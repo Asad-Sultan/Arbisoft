@@ -330,7 +330,6 @@ body {
 
 .section-achievements {
   margin-top: 60px;
-  margin-bottom: 60px;
 }
 
 .achievements-heading {
@@ -374,4 +373,47 @@ body {
 
 .achievement p {
   font-size: 18px;
+}
+
+/******************************/
+/* People Section */
+/******************************/
+
+.section-people {
+  margin-top: 180px;
+  margin-bottom: 180px;
+}
+
+.section-people div {
+  display: flex;
+}
+
+.section-people div img {
+  width: 560px;
+  filter: brightness(75%);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.section-people div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 0 56px 0 112px;
+  transform: scale(1.25);
+  color: var(--dark_blue);
+}
+
+.section-people h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.section-people .btn {
+  width: fit-content;
+  font-size: 14px;
+  margin-top: 16px;
 }
