@@ -83,6 +83,18 @@ body {
   color: #ffffff;
 }
 
+.btn--ghost {
+  background-color: #ffffff;
+  color: var(--dark_blue);
+  border: 1px solid var(--dark_blue);
+}
+
+.btn--ghost:hover {
+  background-color: var(--darker_blue);
+  border: 1px solid var(--darker_blue);
+  color: #ffffff;
+}
+
 /******************************/
 /* Header & Navigation */
 /******************************/
@@ -416,4 +428,130 @@ body {
   width: fit-content;
   font-size: 14px;
   margin-top: 16px;
+}
+
+/******************************/
+/* About Section */
+/******************************/
+
+.section-about {
+  margin-bottom: 80px;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.grid-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.grid-buttons button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: var(--main_blue);
+  border: 2px solid var(--main_blue);
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: inherit;
+  transition-duration: 200ms;
+}
+
+.grid-buttons button:hover {
+  background: var(--main_blue);
+  color: #ffffff;
+}
+
+.grid-buttons button:active {
+  background: linear-gradient(45deg, var(--main_blue), var(--darker_blue));
+  color: #ffffff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 96px 48px;
+}
+
+.grid-block h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.grid-block p {
+  font-size: 20px;
+}
+
+.grid-block .btn {
+  width: fit-content;
+  margin-top: 24px;
+}
+
+.first {
+  color: #eeeeee;
+  min-height: 420px;
+}
+
+.first:nth-child(1) {
+  background-image: url("https://images.ctfassets.net/o0a5sen1qlbz/1veIRunEu2URjCxI0obAT0/ef8da52859d806a25587850dfce07b22/Mask_group__5_.png");
+}
+
+.first:nth-child(2) {
+  background-image: url("https://images.ctfassets.net/o0a5sen1qlbz/4qOi6MxBT7dYo5OZ8NyOaq/6a2ae47d5dfcc9409dc0ca8d42da9831/Mask_group__6_.png");
+}
+
+.first:nth-child(3) {
+  background-image: url("https://images.ctfassets.net/o0a5sen1qlbz/1zaGvwPel5K8vb0YCtAHdj/2084b0354906e03134dc580f912dd736/Mask_group__7_.png");
+}
+
+.first:nth-child(4) {
+  background-image: url("https://images.ctfassets.net/o0a5sen1qlbz/A3UeH08YLuMKHGN0TobuU/01c781d270b4cdf546eb990ae091b714/Mask_group__8_.png");
+}
+
+.second {
+  color: var(--dark_blue);
+  border: 1px solid #ccc;
+}
+
+.first:nth-child(1),
+.second:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+
+.first:nth-child(2),
+.second:nth-child(2) {
+  border-top-right-radius: 10px;
+}
+
+.first:nth-child(3),
+.second:nth-child(3) {
+  border-bottom-left-radius: 10px;
+}
+
+.first:nth-child(4),
+.second:nth-child(4) {
+  border-bottom-right-radius: 10px;
+}
+
+.img-container {
+  height: 80px;
+}
+
+#img-1,
+#img-2,
+#img-3,
+#img-4 {
+  height: 80px;
 }
